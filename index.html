@@ -2,131 +2,168 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>kareem Akeusola Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 
+    <title>Olayiwola Akeusola: A Web Developer</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"
-    >
-    <script src="https://kit.fontawesome.com/0a299490ae.js" crossorigin="anonymous"></script>
+	
+	
+	<!-- I am using Font Awesome Content Delivery Network - CDN -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="https://kit.fontawesome.com/0e3ada2917.js" crossorigin="anonymous"></script>
+	
+	<!-- I am using Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <!------Creating nav section------>
-    <nav>
-      <img 
-      class="logo" 
-      src="image/ambivert.png" 
-      alt="company logo"
-      />
-      <ul class="nav-bar">
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="https://github.com/akeusola">Github</a></li>
-        <li><a href="#contact-me">Contact me</a></li>
-      </ul>
-    </nav>
+	  <!--- -----My Header Container------->
+		<header id="headerContainer">
+			<div class="headerDiv" id="logoId">
+				<img src="images/my_logo.png" class="logo">
+			</div>
+			
+			<div class="headerDiv">
+				
+				<!---------My Navbars------->
+				<nav id="navContainer">
+					<a href="#">Home</a>
+					<a href="#aboutSection">About</a>
+					<a href="#servicesContainer">Services</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Contact</a>
+				</nav>
+			</div>
+			
+			<div class="clearFloat"></div>
+		
+		</header>
+		
+		
+		
+	<!--------My Main container-------->	
+		<main>
 
-    <!-----Creaating a setion about me------>
-    <div class="hero">
-      <div class="hero-info">
-        <h1 id="name">Kareem Akeusola</h1>
-        <p>I am a web developer and a software engineer with eye for details and exelent delivery</p>
-        <div class="styled-break"></div>
-       <div class="button">Hire me</div>
-      </div>
-      <div>
-        <img
-        class="hero-image"
-        src="image/man-works-laptop.jpg"
-        alt="working space illustration"
-        />
-      </div>
-    </div>
+			<!--------My Introduction  Section------->
+			<section id="myBreadcrumb">
+				<div class="introDiv">
+					<div class="myIntro">
+					<p><span class="salutation">Hi There!</span></p>
 
-    
-    <!----what multivated me becoming web engineer-->
-    <section>
-      <div class="about-me"> 
-        <img 
-        class="avatar" 
-        src="image/Olami.jpg" 
-        alt="olayiwola head shot" 
-        />
-      </div>
-      <div class="info">
-        <h2> <a name="about-me">About me</a></h2>
-        <p>I was born and raised in  lagos Nigeria. I developed passion for coding during Covid 19 pandemic, when most jobs were lost and the stay at home order was prominent. All means of income were lost, boredom and frustration set in. As i settle in, i began to enjoy its dynamic nature and its endless possibilities </p>
-      </div>
-    </section>
-    <section>
-     <div class="test"></div>
-     <div class="test" id="main"></div >
-     <div class="test"></div>
-     <div class="test"></div>
-    </section>
-    
-    <!------Creaating a contact-me form------------->
-    <section>
-      <form>
-        <h2><a name="contact-me"</a>Contact Me</h2>
-        <div class="input-section">
-          <div class="input-group">
-            <label for="first-name">First name</label>
-            <input type="text" id="first-me" name="first-name"  value="John"></input>
-          </div>
-          <div class="input-group">
-            <label for="Last-name">Last name</label>
-            <input type="text" id="last-me" name="last-name"  value="Doe"></input>
-          </div>
-        </div>
-        <div class="input-section">
-          <input type="radio" id="office" name="office" value="office"></input>
-          <label for="office" >Office</label>
-          <input type="radio" id="remote" name="remote" value="remote"></input>
-          <label for="remote">Remote</label>
-          <input type="radio" id="other" name="other" value="othe"></input>
-          <label for="other">Other</label>
-        </div>
-        <div class="input-section">
-          <input type="checkbox" id="contract" name="contract" value="contract"</input>
-          <label for="contract">Contract Work</label>
-          <input type="checkbox" id="full-time" name="full-time" value="full-time"></input>
-          <label for="full-time">Full-time</label>
-          <input type="checkbox" id="sponsorship" name="sponsorship" value="sponsorship"></input>
-          <label for="sponsorship">Sponsorship</label>
-        </div>
-        <input class="button" type="submit" value="submit"></input>
-      </form>
-      
-      <!-------inputing contact details--------->
-      </section>
-      <section>
-        <div class="social-icons">
-          <ul>
-            <li><i class="fas fa-phone-alt">Phone: +234-803-095-9359</i></li>
-            <li><i class="fas fa-envelope-open-text ">akeusola.olayiwola@gmail.com</i></li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="social_icons">
-          <ul class="social_icons">
-              <li> <a href="#" class="fab fa-facebook"><span class="https://facebook.com/Olayiwola Olashile">links to facebook</span></a></li>
-              <li> <a href="#" class="fab fa-twitter"><span class="disable_display">links to twitter</span></a></li>
-              <li> <a href="#" class="fab fa-instagram"><span class="disable_display">links to instagram</span></a></li>
-            </ul>
-        </div>
-      </section>
-    <footer>
-      <ul>
-        <li> <a href="#About-me">About-me</a></li>
-        <li> <a href="#contact-me">Contact</a></li>
-        <li> <a href="https://github.com/akeusola">Github</a></li>
-        <ul>&copy copy right 2021
-        </ul>
-      </ul> 
-    </footer>
+					<!---------My <h1> tag------------>
+					<h1>I AM KAREEM AKEUSOLA</h1>
+					<div class="textBg"><p>Creative web developer with passion for problem-solving web apps. Diversity abounds in the world and no man knows it all. <br/><br/>
+					
+					Love disvocering new places and meeting new people.</p></div>
+					
+					
+					</div>
+				</div>
+				
+				<div class="introDiv hideOnMobile">
+					<img src="images/ola.png" class="myImage">
+				</div>			
+			</section>
+			
+			<div class="clearFloat"></div>
+			
+			
+			<!--------My AboutMe Section--------->
+			<section id="aboutSection">
+				<div class="aboutDiv">
+					<img src="images/ola.png">
+				</div>
+				
+				<div class="aboutDiv">
+
+					<!-----------My <h2> tag------------>
+					<h2>A LITTLE ABOUT ME</h2>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br/><br/> I am a social scientist with an eye for simplicity and functionality,  this makes my work to be solution driven. <br/><br/>
+					   On my spare time, 1 enjoy travelling and researching.</p>
+				</div>			
+			</section>
+			
+			
+			
+			
+			
+			
+			
+			
+			<!---------Article tag------------>
+			<article>
+				<h2>MY SERVICES AND EXPERTISE</h2>
+				<section id="servicesContainer">
+					
+						
+					<div class="service">
+							<i class="fas fa-laptop-code fa-5x"></i> <br/>						
+							<h3>Web Development</h3>
+							<p>I develop simple and complex responsive web applications that facilitate businesses and ease procedures, resulting in better feasibility. </p>
+							
+					</div>
+					
+					<div class="service">
+						<i class="fas fa-mobile-alt fa-5x"></i> <br/>
+						<h3>Mobile Application</h3>
+						<p>The world has become a global village and mobile phones are playing a big part. I develop intuitive mobile apps for my clients with love and passion.</p>
+					
+					</div>
+					
+					
+					<div class="service">
+						<i class="fas fa-mouse fa-5x"></i><br/>
+						<h3>Graphics Design</h3>
+						<p>Beauty is all around us; my eyes for aesthetics especially in the natural environment shape my outcome when planning graphics design projects.</p>
+					</div>
+				</section>
+			</article>
+				
+			
+			
+		</main>
+		
+		<!--------My Footer tag-------->
+		<footer id="footerContainer">
+			<div class="footerColumn">
+				<h3>Why Work With Me?</h3>
+				<p>We have a committed team of experts that are passionate and results oriented.<br/><br/> We work with our clients all through the projects from idea conceptualization to the actual project delivery thereby ensuring that the end-in-mind are delightfully met!!!</p>
+			</div>
+			
+			
+			
+			<div class="footerColumn">
+				<h3>Site Links</h3>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#aboutSection">About Me</a></li>
+					<li><a href="#servicesContainer">My Services</a></li>
+					
+				</ul>
+			</div>
+			
+			<!-------MY FOOTER CONTAINER------>
+			
+			<div class="footerColumn">
+				<h3>Contact Me</h3>
+				<p><i class="fas fa-address-book"></i> <strong>Contact Address</strong> <br/>8, Afinju Omo Steet, Kosofe Lagos, Nigeria.</p>
+				
+				<p><i class="fas fa-headphones"></i> <strong>Mobile</strong> <br/>+23480(3) 095 9359</p>
+				
+				<p><i class="fas fa-envelope-open-text"></i> <strong>Email</strong> <br/>akeusola.olayiwola@gmail.com</p>
+				
+				<div id="socialIcons">
+					<a href="https://github.com/akeusola"><img src="images/git.png" class="icons"></a>
+					<a href="https://www.linkedin.com/in/kareem-akeusola-560252a7/"><img src="images/linkedin.png" class="icons"></a>
+					<a href="mailto:akeusola.olayiwola@gmail.com"><img src="images/mail.png" class="icons"></a>
+				</div>
+			</div>		
+		</footer>
+	
+	
+
+  
     <script src="script.js"></script>
   </body>
 </html>
